@@ -18,9 +18,19 @@ body {
 .main {
   background: #fa8072;
   height: 600px;
+  width: 60%;
   line-height: 600px;
+  float: left;
+}
+.sidemain {
+  background: #fafad2;
+  height: 600px;
+  width: 40%;
+  line-height: 600px;
+  float: right;
 }
 .footer {
   background: #add8e6;
   padding: 50px 0;
+  clear: right;
 }
