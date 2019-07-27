@@ -1,0 +1,28 @@
+@charset "utf-8";
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: calc(1280/1920*100%);
+  margin: 0 auto;
+  font-size: 0px;
+  text-align: center;
+  margin-top: 50px;
+}
+.nav {
+  display: inline-block;
+  background-color: #CC9999;
+  width: 30%;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.column {
+  display: inline-block;
+  background-color: #00CC99;
+  width: 70%;
+  font-size: 20px;
+  vertical-align: middle;
+}
