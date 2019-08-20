@@ -1,0 +1,14 @@
+div {
+  text-align: center;
+}
+td {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 500px;
+  height: 100px;
+}
+th {
+  background-color:#CCCCCC;
+}

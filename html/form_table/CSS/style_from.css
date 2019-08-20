@@ -1,0 +1,31 @@
+div {
+  text-align: center;
+}
+table{
+  border-collapse:collapse;
+  text-align: left;
+  width: 400px;
+  height: 300px;
+}
+.overview {
+  width: 40%;
+}
+input[type="text"] {
+  width: 90%;
+}
+textarea {
+  resize: none;
+  width: 90%;
+  height: 60px;
+}
+input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  background-color: blue;
+  color: white;
+}
+.overview {
+  background-color: #CCCCCC;
+  text-align: left;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>フォーム練習</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- リセットCSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <link rel="stylesheet" href="CSS/style_from.css">
+</head>
+<body>
+  <div>
+    <h1>フォーム練習</h1>
+    <h2>お問い合わせ</h2>
+    <form method="GET" action="">
+      <table border="1" align="center">
+        <tr>
+          <th class="overview">お名前</th>
+          <th class="text"><input type="text" name="submit" placeholder="">
+        </tr>
+        <tr>
+          <th class="overview">ご住所</th>
+          <th class="text"><input type="text" name="submit" placeholder="">
+        </tr>
+        <tr>
+          <th class="overview">性別</th>
+          <th>
+          <label for="man"><input type="radio" name="sex" value="yes" checked id="man">男性</label>
+          <label for="woman"><input type="radio" name="sex" value="no" id="woman">女性</label>
+        </tr>
+        <tr>
+          <th class="overview">お問い合わせ種別</th>
+          <th>
+            <select name="kind">
+              <option value="Document request">資料請求</option>
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th class="overview">ご希望の連絡方法<br>（複数選択可）</th>
+          <th>
+          <input type="checkbox" name="how" value="mail">メール
+          <input type="checkbox" name="how" value="phone">電話
+          <input type="checkbox" name="how" value="visit">訪問
+          </th>
+        </tr>
+        <tr>
+          <th class="overview">お問い合わせ内容</th>
+          <th><textarea name="content"></textarea>
+          </th>
+        </tr>
+    </table>
+    <div>
+      <input type="submit" name="submit" value="送信">
+    </div>
+  </form>
+  </div>
+</body>
+</html>
