@@ -1,4 +1,7 @@
 @charset "utf-8";
+html {
+  font-size: 62.5%
+}
 body {
   background: #f0f8ff;
 }
@@ -18,19 +21,24 @@ body {
 .main {
   background: #fa8072;
   height: 600px;
-  width: 60%;
-  line-height: 600px;
-  float: left;
+  display: flex;
+  justify-content: space-between;
 }
-.sidemain {
-  background: #fafad2;
-  height: 600px;
-  width: 40%;
-  line-height: 600px;
-  float: right;
+.side {
+  background: #fff8dc;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content {
+  background: #fa8072;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer {
   background: #add8e6;
   padding: 50px 0;
-  clear: right;
 }

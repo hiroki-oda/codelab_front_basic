@@ -19,33 +19,31 @@ body {
   padding: 50px 0;
 }
 .main {
-  background: #fa8072;
   height: 600px;
   display: flex;
   justify-content: space-between;
 }
-.side1 {
-  background: #fff8dc;
-  width: 25%;
+.side {
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.side2 {
-  background: #A4C6FF;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .main-content {
   background: #fa8072;
-  width: 80%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 1;
+}
+.side1 {
+  background: #fff8dc;
+  order: 0;
+}
+.side2 {
+  background: #87cefa;
+  order: 2;
 }
 .footer {
   background: #add8e6;
