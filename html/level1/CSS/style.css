@@ -1,6 +1,11 @@
-header, main, footer  {
+header, main, footer{
   margin: 0 auto 0 auto;
-  max-width: 960px;
+  max-width: 1280px;
+  font-size: 120%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav li {
@@ -14,14 +19,63 @@ ul {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  line-height: 2em;
 }
 
-div img {
+.keyvisual img {
   max-width: 100%;
 }
 
-main div {
+.main_in {
+margin-top: 100px;
 display: flex;
 flex-wrap: wrap;
+}
+
+p {
+  width: 50%;
+  line-height: 2em;
+  margin-top: 10px;
+}
+
+.mainphoto{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.imgleft1 {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.imgleft2 {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.imgright1 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.imgright2 {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.mainphoto img {
+  max-width: 630px;
+}
+
+.footerlogo {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.last1 {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 85%;
+}
+.last2 {
+  width: 135px;
+  margin: 0 auto;
+  font-size: 85%;
 }
