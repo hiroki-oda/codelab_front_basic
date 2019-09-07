@@ -1,7 +1,7 @@
 header, main, footer{
   margin: 0 auto 0 auto;
   max-width: 1280px;
-  font-size: 120%;
+  font-size: 123%;
 }
 
 a {
@@ -29,15 +29,29 @@ h2 {
 }
 
 .main_in {
-margin-top: 100px;
-display: flex;
-flex-wrap: wrap;
+  margin-top: 100px;
+}
+.maintext, .mainphoto {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 p {
-  width: 50%;
+  width: 630px;
   line-height: 2em;
   margin-top: 10px;
+}
+.lefttop {
+  margin-right: 10px;
+}
+.leftbottom {
+  margin-left: 10px;
+}
+.righttop {
+  margin-right: 10px;
+}
+.rightbottom {
+  margin-left: 10px;
 }
 
 .mainphoto{
@@ -45,19 +59,19 @@ p {
   margin-bottom: 100px;
 }
 .imgleft1 {
-  margin-right: 5px;
+  margin-right: 10px;
   margin-bottom: 5px;
 }
 .imgleft2 {
-  margin-right: 5px;
+  margin-right: 10px;
   margin-top: 5px;
 }
 .imgright1 {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-bottom: 5px;
 }
 .imgright2 {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 .mainphoto img {
