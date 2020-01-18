@@ -1,0 +1,32 @@
+.wrap {
+  height: 100%;
+}
+
+/* ヘッダーのスタイル */
+.top {
+  display: flex;
+  background-image: url(../images/slider_img.jpg);
+  background-size: 100% 100%;
+  color: white;
+  height: 800px;
+}
+nav {
+  background-color: rgb(255, 0, 119);
+  width: 25%;
+  height: 300px;
+  margin-left: 400px;
+}
+
+header h2 {
+  font-size: 300%;
+}
+
+header h1 {
+  font-size: 500%;
+}
+/* ヘッダーのスタイルここまで*/
+
+/* メインのスタイル */
+.main {
+  wi: 980px;
+}
