@@ -3,30 +3,482 @@
 }
 
 /* ヘッダーのスタイル */
-.top {
+header {
   display: flex;
-  background-image: url(../images/slider_img.jpg);
+  background-image: url(../img/slider_img.jpg);
   background-size: 100% 100%;
   color: white;
+  width: 100%;
   height: 800px;
 }
-nav {
-  background-color: rgb(255, 0, 119);
-  width: 25%;
-  height: 300px;
-  margin-left: 400px;
-}
 
-header h2 {
-  font-size: 300%;
+.top {
+  width: 67%;
 }
 
 header h1 {
-  font-size: 500%;
+  font-size: 3rem;
+  padding: 30px 0px 90px 130px;
+}
+
+header h2 {
+  font-size: 5rem;
+  padding-left: 230px;
+}
+
+header p {
+  font-size: 0.9rem;
+  padding-top: 20px;
+  padding-left: 230px;
+}
+
+header nav {
+  background-color: rgb(255, 0, 119);
+  width: 25%;
+  height: 40%;
+}
+
+header ul {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+header li {
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 /* ヘッダーのスタイルここまで*/
 
-/* メインのスタイル */
-.main {
-  wi: 980px;
+/* 横幅合わせる */
+.course-type,
+.program,
+.coach-up,
+.coach-under {
+  width: 1200px;
+  margin-left: 120px;
 }
+
+/* ヨガのスタイル */
+.yoga-main {
+  height: 550px;
+  background-color: rgb(238, 232, 232);
+}
+
+.yoga-top {
+  width: 64%;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  bottom: 130px;
+  left: 120px;
+  display: flex;
+}
+
+.about-box h3,
+.about-box p,
+.yoga-box h2,
+.yoga-box p {
+  margin: 15px 0 15px 0;
+}
+
+.about-box {
+  margin: 25px 0 0 20px;
+  width: 113%;
+}
+
+.yoga-top p {
+  font-size: 0.9rem;
+}
+
+.about-box p {
+  width: 115%;
+}
+
+.yoga {
+  display: flex;
+}
+
+.yoga-box {
+  margin: 30px 0 0 50px;
+}
+
+.yoga-box :last-child {
+  color: rgb(255, 0, 119);
+}
+
+.yoga-box p {
+  width: 210px;
+}
+
+.yoga-top h2 {
+  font-size: 2.8rem;
+}
+
+.yoga-top h3 {
+  font-size: 2rem;
+}
+
+input[type="submit"] {
+  width: 130px;
+  height: 40px;
+  padding: 11px 0;
+  background-color: rgb(255, 0, 119);
+  border-bottom: solid 5px red;
+  color: white;
+}
+
+.about {
+  width: 100%;
+  position: relative;
+  bottom: 130px;
+}
+
+.about img {
+  position: relative;
+  left: 20px;
+}
+
+.yoga img {
+  width: 100%;
+  height: 110%;
+  position: relative;
+  top: 50px;
+  left: 53px;
+}
+/* ヨガのスタイルここまで */
+
+/* コースのスタイル */
+.course {
+  background-image: url(../img/feature_bg.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height:550px;
+  color: white;
+  padding-top: 100px;
+  position: relative;
+  bottom: 65px;
+}
+
+.course h3 {
+  font-size: 3rem;
+}
+
+.course-text {
+  margin-left: 600px;
+  text-align: center;
+  width: 17%;
+}
+
+.course-text p {
+  margin-top: 10px;
+}
+
+.course-type {
+  display: flex;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.course-type h3 {
+  font-size: 2.1rem;
+}
+
+.course-type input {
+  margin-top: 20px;
+}
+
+.swim,
+.power {
+  margin-left: 23px;
+}
+
+.dash div,
+.dash h3,
+.dash p,
+.swim div,
+.swim h3,
+.swim p,
+.power div,
+.power h3,
+.power p {
+  margin-bottom: 10px;
+}
+/* コースのスタイルここまで */
+
+/* スカルプチャーのスタイル */
+.program {
+  height: 1000px;
+}
+
+.program h3,
+.up-under {
+  margin-top: 40px
+}
+
+.program-up,
+.program-under {
+  display: flex;
+}
+
+.program h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.program img {
+  width: 103%;
+}
+
+.up-center,
+.up-right,
+.under-center,
+.under-right {
+  margin-left: 50px;
+}
+
+.up-under {
+  margin-top: 35px;
+}
+
+.up-text,
+.under-text {
+  background-color: rgb(255, 0, 119);
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 50px;
+  margin-left: 45px;
+  padding-top: 25px;
+  position: relative;
+  bottom: 50px;
+}
+
+.program h4 {
+  font-size: 1.2rem;
+}
+
+.program p {
+  font-size: 0.9rem;
+}
+/* スカルプチャーのスタイルここまで */
+
+/* 丸コーチ写真のスタイル */
+.coach {
+  background-image: url(../img/coaches_bg.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height:550px;
+  padding-top: 90px;
+}
+
+.coach-up,
+.coach-under {
+  display: flex;
+}
+
+.moji-icon1,
+.moji-icon2 {
+  width: 110px;
+	height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  text-align: center;
+  line-height: 110px;
+  color: white;
+  font-size: 2rem;
+}
+
+.muscle-man1 {
+  position: relative;
+  top: 120px;
+  right: 70px;
+  width: 137px;
+}
+
+.muscle-man2 {
+  position: relative;
+  right: 70px;
+}
+
+.muscle-man3 {
+  position: relative;
+  bottom: 30px;
+  right: 40px;
+  display: inline-block;
+}
+
+.muscle-man4 {
+  position: relative;
+  top: 50px;
+  right: 20px;
+}
+
+.muscle-man5 {
+  position: relative;
+  top: 75px;
+  right: 20px;
+}
+
+.moji-icon2 {
+  position: relative;
+  top: 60px;
+  right: 15px;
+}
+
+
+.muscle-man6 {
+  position: relative;
+  top: 10px;
+  left: 18px;
+}
+
+.muscle-man7 {
+  position: relative;
+  bottom: 90px;
+  left: 15px;
+}
+
+.muscle-man8 {
+  position: relative;
+  left: 12px;
+}
+
+.moji-icon3 {
+  position: relative;
+  left: 20px;
+  bottom: 60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  text-align: center;
+  line-height: 180px;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.muscle-man9 {
+  position: relative;
+  top: 50px;
+  left: 40px;
+}
+
+.muscle-man10 {
+  position: relative;
+  bottom: 57px;
+  left: 45px;
+}
+
+/* コーチの写真のバウンド設定 */
+.muscle-man1:hover,
+.muscle-man2:hover,
+.muscle-man3:hover,
+.muscle-man4:hover,
+.muscle-man5:hover,
+.muscle-man6:hover,
+.muscle-man7:hover,
+.muscle-man8:hover,
+.muscle-man9:hover,
+.muscle-man10:hover,
+.moji-icon1:hover,
+.moji-icon2:hover,
+.moji-icon3:hover {
+  animation: key1 .2s ease infinite alternate
+}
+
+@keyframes key1{
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
+/* 丸コーチ写真のスタイルここまで */
+
+/* フッターのスタイル */
+footer {
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  height: 582px;
+}
+
+.f-top,
+.f-right {
+  display: flex;
+}
+
+.f-top {
+  height: 400px;
+}
+
+.f-left {
+  width: 50%;
+  background-color: white;
+}
+
+.f-l-text {
+  width: 50%;
+  margin: 50px 0 0 350px;
+}
+
+.f-l-text h4 {
+  font-size: 2rem;
+}
+
+.f-l-text p {
+  margin-top: 20px;
+}
+
+.f-left img {
+  position: relative;
+  bottom: 90px;
+  left: 130px;
+}
+
+.f-right {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  color: white;
+}
+
+.f-right div {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.f-right li,
+.f-right p {
+  font-size: 0.8rem;
+}
+
+.links {
+  margin: 45px 0 0 50px;
+}
+
+address {
+  margin: 45px 0 0 170px;
+}
+
+.f-right li,
+.f-right p {
+  margin-bottom: 15px;
+}
+
+.f-end {
+  text-align: center;
+  padding-top: 120px;
+  color: rgb(59, 59, 59);
+}
+
+span {
+  color: white;
+}
+
+/* フッターのスタイルここまで */
