@@ -117,3 +117,5 @@ if (num10 >= 10) {
 } else {
   console.log('変数num10より小さいです');
 }
+
+//
