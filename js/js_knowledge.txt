@@ -21,7 +21,8 @@ JavaScriptでは数値も文字列も配列もすべてオブジェクト。デ�
 HTML、XMLでいう要素（タグ）に相当。
 
 ・カスタム属性
-HTML要素に対して設定できる独自の属性。data-から始まる。
+HTML要素に対して設定できる独自の属性。data-から始まる.
+
 
 ・JSON
 JavaScript Object Notationの略。
