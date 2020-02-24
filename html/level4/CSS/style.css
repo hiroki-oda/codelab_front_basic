@@ -88,6 +88,7 @@ header li {
 
 .yoga-top p {
   font-size: 0.9rem;
+  line-height: 25px;
 }
 
 .about-box p {
@@ -143,7 +144,7 @@ input[type="submit"] {
   height: 110%;
   position: relative;
   top: 50px;
-  left: 53px;
+  left: 54px;
 }
 /* ヨガのスタイルここまで */
 
@@ -246,19 +247,20 @@ input[type="submit"] {
   color: white;
   text-align: center;
   width: 80%;
-  height: 50px;
-  margin-left: 45px;
-  padding-top: 25px;
+  height: 80px;
+  margin: 7px 0 0 45px;
   position: relative;
   bottom: 50px;
 }
 
 .program h4 {
   font-size: 1.2rem;
+  padding-top: 20px;
 }
 
 .program p {
   font-size: 0.9rem;
+  margin-top: 5px;
 }
 /* スカルプチャーのスタイルここまで */
 
@@ -281,7 +283,6 @@ input[type="submit"] {
   width: 110px;
 	height: 110px;
   border-radius: 50%;
-  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
@@ -353,7 +354,6 @@ input[type="submit"] {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
@@ -401,11 +401,10 @@ input[type="submit"] {
 
 /* フッターのスタイル */
 footer {
-  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
-  height: 582px;
+  height: 610px;
 }
 
 .f-top,
@@ -433,12 +432,14 @@ footer {
 
 .f-l-text p {
   margin-top: 20px;
+  line-height: 25px;
 }
 
 .f-left img {
   position: relative;
-  bottom: 90px;
+  bottom: 100px;
   left: 130px;
+  width: 70%;
 }
 
 .f-right {
@@ -473,12 +474,11 @@ address {
 
 .f-end {
   text-align: center;
-  padding-top: 120px;
+  padding-top: 130px;
   color: rgb(59, 59, 59);
 }
 
 span {
   color: white;
 }
-
 /* フッターのスタイルここまで */
