@@ -118,4 +118,71 @@ if (num10 >= 10) {
   console.log('変数num10より小さいです');
 }
 
-//
+// switch問題
+// 以下のif文をswitch文に書き換えてください。
+// またbreak命令を使い、コンソールを複数出力しないようにしてください。
+var course = '中級';
+// if (course === '初級') {
+//   console.log('初級コース');
+// } else if (course === '中級') {
+//   console.log('中級コース');
+// } else if (course === '上級') {
+//   console.log('上級コース');
+// } else {
+//   console.log('未受講です');
+// }  　
+
+// ↓switch文で
+switch (course) {
+  case '初級':
+    console.log('初級コース');
+    break;
+
+  case '中級':
+    console.log('中級コース');
+    break;
+
+  case '上級':
+    console.log('上級コース');
+    break;
+
+  default:
+    console.log('未受講です');
+    break;
+}
+
+// while問題
+// 変数hogeが10~5の数値をコンソールに出力するようにwhileの条件を記載してください
+var hoge = 10;
+while (hoge > 4) {
+  console.log(hoge);
+  hoge--;
+}
+
+// do...while問題
+// do内の処理を1度だけ実行するようにdo...while文の条件を記載してください。
+var hoge2 = 5;
+do {
+  console.log(hoge2);
+  hoge2--;
+} while (hoge2 > 4);
+
+// for問題
+// for文を使いコンソールに1~20の数値を出力してください。
+var i = 1
+for (; i < 21; i++) {
+  console.log(i);
+}
+
+// for問題
+// コンソールに以下の結果となるように掛け算の九九を1の段から9の段を出力してください。つまり81行出力することになります。
+// 1×1は1です
+// 1×2は2です
+// 中略
+// 9×9は81です
+// ヒント･･･for文の中にfor文を入れることが出来ます
+for (var kuku1 = 1; kuku1 < 10; kuku1++) {
+  for (var kuku2 = 1; kuku2 < 10; kuku2++) {
+    console.log(kuku1 + '×' + kuku2 + 'は' + (kuku1 * kuku2) + 'です');
+  }
+}
