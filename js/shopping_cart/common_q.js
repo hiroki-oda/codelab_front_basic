@@ -22,9 +22,14 @@
   // 定数は全て大文字で書くことが多い
   var TAXRATE = 8;
 
+  //タブレットの価格をHTMLより取得
+  var tabletPrice = document.getElementById('tabletPrice').innerHTML;
+  //PCの価格をHTMLより取得
+  var pcPrice = document.getElementById('pcPrice').innerHTML;
+
   btn.onclick = function() {
-    var t_total = tablet.value * 10000  //タブレットの小計
-    var p_total = pc.value * 50000  //パソコンの小計
+    var t_total = tablet.value * Number(tabletPrice); //タブレットの小計（文字列を数値に変換しつつ計算）
+    var p_total = pc.value * Number(pcPrice); //パソコンの小計（文字列を数値に変換しつつ計算）
     var subvalue = t_total + p_total; //小計
     var TAXamount = (subvalue * TAXRATE) / 100; //税額
     subtotal.textContent = subvalue;  //小計の表示
