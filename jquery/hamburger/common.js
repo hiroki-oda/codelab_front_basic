@@ -1,13 +1,13 @@
 $(function() {
   $('#open').on('click',function(){
-    $("body").addClass("active");
+    $('body').addClass('active');
   });
 
   $('#close').on('click',function(){
-    $("body").removeClass("active");
+    $('body').removeClass('active');
   });
 
   $('#mask').on('click',function(){
-    $("body").removeClass("active");
+    $('body').removeClass('active');
   });
 });
