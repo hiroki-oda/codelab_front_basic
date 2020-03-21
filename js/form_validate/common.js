@@ -4,7 +4,7 @@ document.getElementById("submit").onclick = function() {
   var tel = document.getElementsByName("tel")[0].value;
   var mail = document.getElementsByName("mail")[0].value;
   var regex_kana = new RegExp(/^[ァ-ンヴー]*$/);
-  var regex_tel = new RegExp(/^\d{7,13}$/);
+  var regex_tel = new RegExp(/^\d{10,11}$/);
   var regex_mail = new RegExp(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/);
   var flag = 0; //フラグに0を代入（0にリセット）
 
@@ -19,53 +19,50 @@ document.getElementById("submit").onclick = function() {
     //要件に一致する場合
     document.getElementById("err-name").textContent= "名前が未入力です。"; //警告文を表示
     document.getElementById("err-name").style.color = "red"; //警告文を赤にする
-    flag = flag + 1 //エラーの場合フラグに1を加算
+    flag = ++flag; //エラーの場合フラグに1を加算
   }
 
   //フリガナ未入力チェック
   if (kana == "") {
     document.getElementById("err-kana").textContent = "全角カナで入力してください。";
     document.getElementById("err-kana").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //全角カタカナで入力されているかチェック
-  if (regex_kana.test(kana)) {}
-  else {
+  if (!regex_kana.test(kana)) {
     document.getElementById("err-kana").textContent = "全角カナで入力してください。";
     document.getElementById("err-kana").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //電話番号未入力チェック
   if (tel == "") {
     document.getElementById("err-tel").textContent = "電話番号をハイフンなしで入力してください。";
     document.getElementById("err-tel").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //ハイフンなしの半角かチェック
-  if (regex_tel.test(tel)) {}
-  else {
+  if (!regex_tel.test(tel)) {
     //要件に一致しない場合
     document.getElementById("err-tel").textContent = "電話番号をハイフンなしで入力してください。";
     document.getElementById("err-tel").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //アドレス未入力チェック
   if (mail == "") {
     document.getElementById("err-mail").textContent = "メールアドレスの形式ではありません。";
     document.getElementById("err-mail").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //アドレス形式かチェック
-  if (regex_mail.test(mail)) {}
-  else {
+  if (!regex_mail.test(mail)) {
     document.getElementById("err-mail").textContent = "メールアドレスの形式ではありません。";
     document.getElementById("err-mail").style.color = "red";
-    flag = flag + 1;
+    flag = ++flag;
   }
 
   //flagが0より大きい場合処理を中断(エラーの場合は1が加算されていく)
