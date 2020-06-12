@@ -1,0 +1,1615 @@
+@media screen and (max-width: 375px) {
+  /*画面幅が375pxまでなら*/
+  .wrap {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* 共通 */
+  .s1 {
+    padding: 40px 0 40px 0;
+  }
+
+  .s2 {
+    padding: 100px 0 70px 0;
+  }
+
+  .in {
+    text-align: center;
+  }
+
+  .underbar-b, .active-bar1, .active-bar2, .active-bar3 {
+    width: 30%;
+    margin: 50px 0% 50px 35%;
+    border: 0.5px solid black;
+  }
+
+  .text, .active-text1, .active-text2, .active-text3 {
+    font-size: 0.8rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 90%;
+    margin-left: 17px;
+  }
+
+  h2, .us2-title-active {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .middle {
+    background-size: 200% 350px;
+    background-position: 50% 0%;
+    position: relative;
+    padding: 13%;
+    height: 248px;
+  }
+
+  .m-text, .m-text-active {
+    color: white;
+    font-weight: bold;
+    border: 2.5px solid white;
+    width: 80%;
+    text-align: center;
+    margin: 100px 0 0 25px;
+    padding: 15px 0 15px 0;
+    font-family: "Batang";
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "arial black";
+    letter-spacing: 5px;
+  }
+  /* 共通ここまで */
+
+  /* トップ */
+  header {
+    background-image: url("../img/banner.jpg");
+    background-size: 200%;
+    background-position: 45% 0%;
+    height: 400px;
+  }
+
+  .top {
+    color: white;
+    padding-top: 115px;
+  }
+
+  .top h1 {
+    font-size: 1rem;
+    transition-duration: 0.5s;
+  }
+
+  .top-title-a {
+    animation-name: animation-top-title;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-top-title {
+    25% {
+      transform: scale(1.15);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.05);
+   }
+  } /* アニメーション */
+
+  .underbar-w {
+    width: 20%;
+    margin: 20px 0% 20px 40%;
+    border: 0.5px solid white;
+    transition-duration: 0.5s;
+  }
+
+  .underbar-w-a {
+    animation-name: animation-underbar-w-a;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+  } /* アニメーション */
+
+  @keyframes animation-underbar-w-a {
+    0%{
+      transform: scale(1.3, 1.3) translate(0%, 0%);
+    }
+    100%{
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .top-text {
+    line-height: 30px;
+  }
+
+  .top-text-a {
+    animation-name: animation-top-text-a;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-top-text-a {
+    25% {
+      transform: scale(1.15);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.05);
+   }
+  } /* アニメーション */
+
+  header img {
+    position: absolute;
+    left: 45%;
+    top: 42%;
+    width: 10%;
+  }
+  /* トップここまで */
+
+  /* イントロ */
+  .intro-title {
+    opacity: 0;
+  }
+
+  .intro-active {
+    animation-name: animation-intro-active;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-intro-active {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-a .underbar-b {
+    border-top: 0.5px solid black;
+    opacity: 0;
+    transform: rotate(-0.25turn) translateY(-100px);
+  } /* アニメーション */
+
+  .active-bar1 {
+    animation-name: animation-active-bar1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0);
+  } /* アニメーション */
+
+  @keyframes animation-active-bar1 {
+    0% {
+      transform: scale(0.1, 0.1) rotate(-0.25turn) translateY(-100px);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-a .text {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  } /* アニメーション */
+
+  .active-text1 {
+    animation-name: animation-active-text1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-active-text1 {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+  /* イントロここまで */
+
+  /* NO1 */
+  .no1 {
+    background-image: url("../img/lepy.jpg");
+    perspective : 200px;
+  }
+
+  .m-text {
+    opacity: 0;
+    transform: rotateX(120deg);
+  } /* アニメーション */
+
+  .m-text-active {
+    animation-name: animation-m-text-active;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-m-text-active {
+    20% {
+      transform: rotateX(20deg);
+    }
+    40% {
+      transform: rotateX(-20deg);
+    }
+    60% {
+      transform:rotateX(0deg);
+    }
+    80% {
+      transform: rotateX(-5deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  } /* アニメーション */
+  /* NO1ここまで */
+
+  /* SOME MF MUR WORK */
+  .details {
+    padding: 100px 0 50px 0;
+    height: 952px;
+  }
+
+  .w-ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 2%;
+  }
+
+  .w-ul li:nth-child(4) {
+    margin-top: 20px;
+  }
+
+  .center-img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .img-top,
+  .img-under {
+    width: 45%;
+    overflow: hidden;
+    margin: 5px 8px 5px 0px;
+    position: relative;
+  }
+
+ .w-img {
+    width: 100%;
+ }
+
+  .img-top .caption,
+  .img-under .caption {
+    border: 10px solid black;
+    font-size: 130%;
+    text-align: center;
+    padding-top: 55px;
+    color: #fff;
+  }  /* エフェクト */
+
+  .c-p1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }  /* エフェクト */
+
+  .c-p2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }  /* エフェクト */
+
+  .underbar-d {
+    width: 15%;
+    margin: 30px 0% 30px 42%;
+    border: 0.5px solid darkorange;
+  }
+
+  .img-top .mask,
+  .img-under .mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }  /* エフェクト */
+
+  .img-top:hover .mask,
+  .img-under:hover .mask {
+    opacity: 1;/* マスクを表示する */
+  }  /* エフェクト */
+
+  .more {
+    border: 2.5px solid black;
+    width: 60%;
+    height: 35px;
+    margin-top: 60px;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px 30px 0px 35px;
+    font-weight: bold;
+  }
+  /* SOME MF MUR WORKここまで */
+
+  /* NO2 */
+  .no2 {
+    background-image: url("../img/helo.jpg");
+    perspective : 200px;
+  }
+  /* NO2ここまで */
+
+  /* OUR CLIENTS */
+  .clients {
+    background-color: rgb(241, 240, 240);
+    height: 523px;
+  }
+
+  .clients-title {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  } /* アニメーション */
+
+  .clients-title-a {
+    animation-name: animation-clients-title-a;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-clients-title-a {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .logo img {
+    margin: 30px 30px 0 30px;
+    opacity: 0;
+    transform: scale(1, 1);
+    transition: all 1s;
+  } /* アニメーション */
+  /* OUR CLIENTSここまで */
+
+  /* ABOUT US */
+  .about {
+    height: 2103px;
+  }
+
+  .us1 .h2-a {
+    animation-name: animation-about;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+  }
+
+  .us1 .text-a {
+    animation-name: animation-about;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes animation-about {
+    0%{
+      opacity:0.11
+    }
+    100%{
+      opacity:1
+    }
+  } /* アニメーション */
+
+  .about-img {
+    margin: 20px 10px 0 10px;
+  }
+
+  .about-img img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mini-box {
+    font-size: 1.2em;
+    border: 2px solid;
+    width: 99%;
+    height: 280px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 100px;
+  }
+
+  .mini-link {
+    font-weight: bold;
+    border: 2.5px solid;
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    margin: 20px 0 0 50px;
+    padding-top: 10px;
+  }
+
+  .underbar-c {
+    width: 40%;
+    margin: 40px 0% 40px 30%;
+    border: 0.5px solid black;
+  }
+  /* ABOUT USここまで */
+
+  /* NO3 */
+  .no3 {
+    background-image: url("../img/video.jpg");
+    background-size: 250% 390px;
+    height: 298px;
+  }
+
+  .no3 img {
+    position: relative;
+    left: 35%;
+    top: 100px;
+    width: 30%;
+  }
+  /* NO3ここまで */
+
+  /* WHY CHOOSE US */
+  .us2-title-active, .active-bar2, .active-text2 {
+	  animation: yokoyure 1.5s ease 0.4s forwards infinite;
+	  transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes yokoyure {
+    50% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    53% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    56% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    60% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    63% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    66% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    70% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    73% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    76% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    80% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    83% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    86% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+	  90% {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	  }
+	  93% {
+	    -webkit-transform: translateX(-20px);
+	    transform: translateX(-20px);
+	  }
+	  96% {
+	    -webkit-transform: translateX(10px);
+	    transform: translateX(10px);
+	  }
+	  100% {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	  }
+  } /* アニメーション */
+
+  .why {
+    height: 690px;
+  }
+
+  .device-icon {
+    height: 370px;
+    margin-top: 40px;
+  }
+
+  .device-icon .slick-dots {
+    text-align: center;
+  }
+
+  .device-icon .slick-dots li {
+    display: inline-block;
+  }
+
+  .device-icon .slick-dots li button {
+    position: relative;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .device-icon .slick-dots li button::before {
+    cursor: pointer;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    border-radius: 50%;
+    background: #D8D8D8;
+    width: 8px;
+    height: 8px;
+  }
+
+  .device-icon .slick-dots .slick-active button::before {
+    background: #000;
+  }
+
+  .di-title {
+    margin: 30px 0 30px 0;
+  }
+
+  .di img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .di p {
+    width: 90%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+  /* WHY CHOOSE USここまで */
+
+  /* NO4 */
+  .no4 {
+    background-image: url("../img/quotes.jpg");
+    height: 247px;
+    perspective : 200px;
+  }
+  /* NO4ここまで */
+
+  /* GET IN ROUCHここまで */
+  .touch {
+      height: 293px;
+  }
+
+  .touch-title {
+    opacity: 0;
+  }
+
+  .touch-active {
+    animation-name: animation-intro-active2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+
+  @keyframes animation-intro-active2 {
+    0%{
+      transform: scale(0.1, 0.1);
+    }
+    100%{
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-b .underbar-b {
+    border-top: 0.5px solid black;
+    opacity: 0;
+    transform: rotate(-0.25turn) translateY(-100px);
+   } /* アニメーション */
+
+  .active-bar3 {
+    animation-name: animation-active-bar3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-active-bar3 {
+    0%{
+      transform: scale(0.1, 0.1);
+    }
+    100%{
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-b .text {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  } /* アニメーション */
+
+  .active-text3 {
+    animation-name: animation-active-text3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-active-text3 {
+    0%{
+      transform: scale(0.1, 0.1);
+    }
+    100%{
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+  /* GET IN ROUCHここまで */
+
+  /* footer */
+  .location, .location-active {
+    background-color: rgb(241, 240, 240);
+    text-align: center;
+    padding: 50px;
+    font-size: 1.4rem;
+  }
+
+  .location h4, .location-active h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .location p, .location-active p {
+    margin-top: 20px;
+  }
+
+  .sns-icon {
+    margin-top: 30px;
+  }
+
+  .sns-icon li {
+    display: inline-block;
+    margin-right: 17px;
+  }
+
+  form {
+    background-color: rgb(233, 231, 231);
+    height: 400px;
+  }
+
+  .f-all {
+    width: 90%;
+    padding: 50px 0 0 15px;
+  }
+
+  input, textarea {
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-width: 2px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
+
+  #name, #email {
+    width: 100%;
+    height: 50px;
+  }
+
+  .f-under {
+    width: 80%;
+  }
+
+  #message {
+    width: 125%;
+    height: 50px;
+    margin-top: 50px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: darkgrey;
+    font-size: 1.1rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 20px;
+    border: 0.5px solid black;
+    border-width: medium;
+    text-align: center;
+    padding: 10px 30px 10px 35px;
+    margin: 50px 0 0 49%;
+  }
+
+  .location-active {
+    animation-name: animation-location;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-location {
+    0% {
+      transform: translate(-550px);
+    }
+    100% {
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .form-name-active {
+    animation-name: animation-from;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-from {
+    0% {
+      transform: translate(1000px);
+    }
+    100% {
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .end {
+    height: 200px;
+    background-color: rgb(41, 40, 40);
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .end img {
+    width: 90%;
+  }
+
+  .end p {
+    color: white;
+    margin-left: 40px;
+    font-size: 0.9rem;
+    width: 80%;
+    line-height: 30px;
+  }
+
+  span {
+    color: darkorange;
+  }
+  /* footerここまで */
+}
+
+/*------------画面幅が1500pxまでなら------------*/
+@media screen and (min-width: 376px) {
+  .wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+
+  /* 共通 */
+  .s1 {
+    padding: 130px 0 130px 0;
+  }
+
+  .s2 {
+    padding: 100px 0 70px 0;
+  }
+
+  .in {
+    text-align: center;
+  }
+
+  .underbar-b, .active-bar1,
+  .active-bar2, .active-bar3 {
+    width: 8%;
+    margin: 50px 0% 50px 46%;
+    border: 0.5px solid black;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .commentary-a .text, .commentary-a .active-text1,
+  .us1 .text, .us1 .text-a,
+  .us2 .text, .us2 .active-text2,
+  .commentary-b .text, .commentary-b .active-text3 {
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 48%;
+    margin-left: 26%;
+  }
+
+  h2, .us2-title-active {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .middle {
+    background-size: cover;
+    position: relative;
+    padding: 13%;
+  }
+
+  .m-text, .m-text-active {
+    color: white;
+    font-size: 1.8em;
+    border: 2.5px solid white;
+    width: 34%;
+    height: 50px;
+    margin-left: 30%;
+    text-align: center;
+    padding: 20px 30px 0px 35px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "arial black";
+    letter-spacing: 5px;
+  }
+  /* 共通ここまで */
+
+  /* トップ */
+  header {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 30%;
+  }
+
+  .top {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .top h1 {
+    font-size: 2.5rem;
+    transition-duration: 0.5s;
+  }
+
+  .top-title-a {
+    animation-name: animation-top-title;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-top-title {
+    25% {
+      transform: scale(1.15);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.05);
+   }
+  } /* アニメーション */
+
+  .underbar-w {
+    width: 20%;
+    margin: 30px 0% 30px 40%;
+    border: 0.5px solid white;
+    transition-duration: 0.5s;
+  }
+
+  .underbar-w-a {
+    animation-name: animation-underbar-w-a;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+  } /* アニメーション */
+
+  @keyframes animation-underbar-w-a {
+    0% {
+      transform: scale(1.3, 1.3) translate(0%, 0%);
+    }
+    100% {
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .top-text {
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+  }
+
+  .top-text-a {
+    animation-name: animation-top-text-a;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-top-text-a {
+    25% {
+      transform: scale(1.15);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.05);
+   }
+  } /* アニメーション */
+
+  header img {
+    position: absolute;
+    left: 50%;
+    top: 83%;
+    width: 2%;
+  }
+  /* トップここまで */
+
+  /* イントロ */
+  .intro-title {
+    opacity: 0;
+  }
+
+  .intro-active {
+    animation-name: animation-intro-active;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+
+  @keyframes animation-intro-active {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-a .underbar-b {
+    border-top: 0.5px solid black;
+    opacity: 0;
+    transform: rotate(-0.25turn) translateY(-100px);
+  } /* アニメーション */
+
+  .active-bar1 {
+    animation-name: animation-active-bar1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0);
+  } /* アニメーション */
+
+  @keyframes animation-active-bar1 {
+    0% {
+      transform: scale(0.1, 0.1) rotate(-0.25turn) translateY(-100px);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-a .text {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  } /* アニメーション */
+
+  .active-text1 {
+    animation-name: animation-active-text1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-active-text1 {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+  /* イントロここまで */
+
+  /* NO1 */
+  .no1 {
+    background-image: url("../img/lepy.jpg");
+    perspective : 200px;
+  }
+
+  .m-text {
+    opacity: 0;
+    transform: rotateX(120deg);
+  } /* アニメーション */
+
+  .m-text-active {
+    animation-name: animation-m-text-active;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes animation-m-text-active {
+    20% {
+      transform: rotateX(20deg);
+    }
+    40% {
+      transform: rotateX(-20deg);
+    }
+    60% {
+      transform:rotateX(0deg);
+    }
+    80% {
+      transform: rotateX(-5deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  } /* アニメーション */
+  /* NO1ここまで */
+
+  /* SOME MF MUR WORK */
+  .details {
+    padding: 100px 0 50px 0;
+  }
+
+  .w-ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .center-img {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .img-top,
+  .img-under {
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative;
+  }
+
+  .img-top .caption,
+  .img-under .caption {
+    border: 10px solid black;
+    height: 215px;
+    font-size: 130%;
+    text-align: center;
+    padding-top: 185px;
+    color: #fff;
+  }  /* エフェクト */
+
+  .c-p1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }  /* エフェクト */
+
+  .c-p2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }  /* エフェクト */
+
+  .underbar-d {
+    width: 15%;
+    margin: 30px 0% 30px 42%;
+    border: 0.5px solid darkorange;
+  }
+
+  .img-top .mask,
+  .img-under .mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }  /* エフェクト */
+
+  .img-top:hover .mask,
+  .img-under:hover .mask {
+    opacity: 1;/* マスクを表示する */
+  }  /* エフェクト */
+
+  .more {
+    border: 1.5px solid black;
+    width: 20%;
+    height: 35px;
+    margin-top: 60px;
+    margin-left: 38%;
+    text-align: center;
+    padding: 20px 30px 0px 35px;
+  }
+  /* SOME MF MUR WORKここまで */
+
+  /* NO2 */
+  .no2 {
+    background-image: url("../img/helo.jpg");
+    perspective : 200px;
+  }
+  /* NO2ここまで */
+
+  /* OUR CLIENTS */
+  .clients {
+    background-color: rgb(241, 240, 240);
+  }
+
+  .clients-title {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  }
+
+  .clients-title-a {
+    animation-name: animation-clients-title-a;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-clients-title-a {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .logo img {
+    margin: 0 30px 0 30px;
+    opacity: 0;
+    transform: scale(1, 1);
+    transition: all 0.5s;
+  } /* アニメーション */
+  /* OUR CLIENTSここまで */
+
+  /* ABOUT US */
+  .us1 .h2-a {
+    animation-name: animation-about;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+  } /* アニメーション */
+
+  .us1 .text-a {
+    animation-name: animation-about;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+  } /* アニメーション */
+
+  @keyframes animation-about {
+    0%{
+      opacity:0.11
+    }
+    100%{
+      opacity:1
+    }
+  } /* アニメーション */
+
+  .about-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-img img {
+    margin: 20px;
+    width: 20%;
+  }
+
+  .mini-box {
+    font-size: 1.2em;
+    border: 2px solid;
+    width: 19%;
+    height: 322px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5%;
+  }
+
+  .mini-box h3 {
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+
+  .mini-link {
+    font-weight: bold;
+    border: 2.5px solid;
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .underbar-c {
+    width: 40%;
+    margin: 40px 0% 40px 30%;
+    border: 0.5px solid black;
+  }
+  /* ABOUT USここまで */
+
+  /* NO3 */
+  .no3 {
+    background-image: url("../img/video.jpg");
+  }
+
+  .no3 img {
+    position: relative;
+    left: 48%;
+    top: 20px;
+    width: 5%;
+  }
+  /* NO3ここまで */
+
+  /* WHY CHOOSE US */
+  .us2-title-active, .active-bar2, .active-text2 {
+	  animation: yokoyure 1.5s ease 0.4s forwards infinite;
+	  transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    animation-iteration-count: 1;
+  } /* アニメーション */
+
+  @keyframes yokoyure {
+    50% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    53% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    56% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    60% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    63% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    66% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    70% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    73% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    76% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    80% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    83% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    86% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+	  90% {
+	    -webkit-transform: translateX(0);
+	   transform: translateX(0);
+	  }
+	  93% {
+	    -webkit-transform: translateX(-20px);
+	    transform: translateX(-20px);
+	  }
+	  96% {
+	    -webkit-transform: translateX(10px);
+	    transform: translateX(10px);
+    }
+	  100% {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	  }
+  } /* アニメーション */
+
+  .device-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .di {
+    margin-top: 100px;
+    width: 28%;
+  }
+
+  .di-title {
+    margin: 30px 0 30px 0;
+  }
+
+  .di p {
+    font-size: 0.9rem;
+    margin: 10px 0 0 10px;
+  }
+  /* WHY CHOOSE USここまで */
+
+  /* NO4 */
+  .no4 {
+    background-image: url("../img/quotes.jpg");
+    perspective : 200px;
+  }
+  /* NO4ここまで */
+
+  /* GET IN ROUCHここまで */
+  .touch-title {
+    opacity: 0;
+  }
+
+  .touch-active {
+    animation-name: animation-intro-active2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-intro-active2 {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-b .underbar-b {
+    border-top: 0.5px solid black;
+    opacity: 0;
+    transform: rotate(-0.25turn) translateY(-100px);
+  } /* アニメーション */
+
+  .active-bar3 {
+    animation-name: animation-active-bar3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-active-bar3 {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+
+  .commentary-b .text {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  } /* アニメーション */
+
+  .active-text3 {
+    animation-name: animation-active-text3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+  } /* アニメーション */
+
+  @keyframes animation-active-text3 {
+    0% {
+      transform: scale(0.1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } /* アニメーション */
+  /* GET IN ROUCHここまで */
+
+  /* footer */
+  .contact {
+    display: flex;
+    height: 400px;
+  }
+
+  .location, .location-active {
+    background-color: rgb(241, 240, 240);
+    width: 37%;
+    padding-top: 100px;
+    font-size: 1.1rem;
+  }
+
+  .location h4, .location-active h4 {
+    font-weight: bold;
+    margin-left: 25%;
+  }
+
+  .location p, .location-active p {
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+
+  .sns-icon {
+    margin-top: 30px;
+    margin-left: 25%;
+  }
+
+  .sns-icon li {
+    display: inline-block;
+    margin-right: 17px;
+  }
+
+  form {
+    background-color: rgb(233, 231, 231);
+    width: 63%;
+  }
+
+  .f-all {
+    width: 80%;
+    padding-top: 100px;
+    position: relative;
+    padding-left: 20%;
+  }
+
+  .f-top {
+    display: flex;
+  }
+
+  input,
+  textarea {
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-width: 2px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
+
+  #name,
+  #email {
+    width: 90%;
+    height: 50px;
+    margin-right: 150px;
+  }
+
+  .f-under {
+    width: 80%;
+  }
+
+  #message {
+    width: 102%;
+    height: 50px;
+    margin-top: 50px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: darkgrey;
+    font-size: 1.1rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 10%;
+    height: 20px;
+    border: 0.5px solid black;
+    border-width: medium;
+    text-align: center;
+    padding: 10px 30px 10px 35px;
+    margin: 20px 0 0 49%;
+  }
+
+  .location {
+    opacity: 0;
+  }
+
+  .location-active {
+    animation-name: animation-location;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-location {
+    0% {
+      transform: translate(-550px);
+    }
+    100% {
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .form-name {
+    opacity: 0;
+  }
+
+  .form-name-active {
+    animation-name: animation-from;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  } /* アニメーション */
+
+  @keyframes animation-from {
+    0% {
+      transform: translate(1000px);
+    }
+    100% {
+      transform: scale(1, 1) translate(0%, 0%);
+    }
+  } /* アニメーション */
+
+  .end {
+    height: 250px;
+    background-color: rgb(41, 40, 40);
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .end p {
+    color: white;
+    margin-top: 25px;
+    font-size: 0.9rem;
+  }
+
+  span {
+    color: darkorange;
+  }
+  /* footerここまで */
+}
