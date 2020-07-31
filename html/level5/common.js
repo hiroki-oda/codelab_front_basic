@@ -1,4 +1,18 @@
 $(function () {
+  //ハンバーガーメニュー
+  $('#open').on('click',function(){
+    $('body').addClass('active');
+  });
+
+  $('#close').on('click',function(){
+    $('body').removeClass('active');
+  });
+
+  $('#mask').on('click',function(){
+    $('body').removeClass('active');
+  });
+  //ハンバーガーメニューここまで
+
   // ヘッダーのアニメーション
   $('.top h1').css({ opacity: '0' });
   $('.underbar-w').css({ opacity: '0' });
@@ -16,11 +30,11 @@ $(function () {
     $('.top h1').addClass('top-title-a');
     setTimeout(function () {
       $('.underbar-w').addClass('underbar-w-a');
-    }, 1000);
+    }, 500);
     setTimeout(function () {
       $('.top-text').addClass('top-text-a');
-    }, 1200);
-  }, 1400);
+    }, 700);
+  }, 1000);
   // ヘッダーのアニメーションここまで
 
   // イントロのアニメーション
